@@ -1,0 +1,54 @@
+# Dependências e cache local
+node_modules/
+/.npm/
+/.pnpm-store/
+/.cache/
+
+# Next.js, TypeScript e saídas de build
+/.next/
+/out/
+/dist/
+/build/
+/.turbo/
+/.vercel/
+/next-env.d.ts
+*.tsbuildinfo
+
+# Estante local, livros e arquivos auxiliares do SQLite
+/data/
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+
+# Variáveis de ambiente e certificados locais
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.pfx
+
+# Resultados de testes e logs
+/coverage/
+/playwright-report/
+/test-results/
+/blob-report/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Preferências do editor e do sistema
+/.idea/
+/.vscode/*
+!/.vscode/extensions.json
+.DS_Store
+Thumbs.db
+Desktop.ini
