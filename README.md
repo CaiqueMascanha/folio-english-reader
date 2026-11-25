@@ -60,10 +60,4 @@ npm start
 
 A tela inicial usa Three.js para renderizar o destaque quando WebGL 2 está disponível. O Folio mantém os dados em SQLite no servidor local. Para preservar sua estante ao trocar de computador, pare o servidor e copie a pasta `data`.
 
-O repositório pode ser publicado com o `package-lock.json`. O `.gitignore` exclui a estante local, arquivos de ambiente e saídas de build. Em um clone limpo, use `npm ci` para instalar as versões do lockfile.
-
-## Publicar o Folio
-
-O GitHub pode guardar o código em um repositório privado. Para hospedar o aplicativo completo, use um servidor Node.js com um disco persistente para o SQLite. O GitHub Pages serve arquivos estáticos e o Folio precisa das rotas de importação, leitura, vocabulário e tradução no servidor.
-
-Em produção, execute `npm ci`, `npm run build` e `npm start`. Aponte um proxy HTTPS para a porta local 3000, configure `FOLIO_DB_PATH` no disco persistente e mantenha o Ollama no mesmo servidor caso ofereça tradução. Para incluir a imagem de compartilhamento, configure `FOLIO_SITE_URL` com a origem HTTPS pública antes do build. A versão atual usa uma estante compartilhada por instalação. Oferecer contas individuais requer autenticação e separação dos dados por usuário.
+O `.gitignore` exclui a estante local, os arquivos de ambiente e as saídas de build. Em um clone limpo, use `npm ci` para instalar as versões registradas em `package-lock.json`.
